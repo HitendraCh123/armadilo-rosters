@@ -1,0 +1,404 @@
+
+
+
+@media (max-width: 991px) {
+
+  /* HOME BANNER */
+  .home-banner {
+    padding: 100px 0;
+  }
+
+  .home-banner h1 {
+    font-size: 34px;
+  }
+
+  .brand-partner .partner-list li {
+    width: 33.333%;
+    padding: 10px 15px;
+  }
+
+  /* ABOUT US */
+  .about-us {
+    padding: 40px 0;
+  }
+
+  .about-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-us .sub-title {
+    font-size: 34px;
+  }
+
+  .about-us .img-box {
+    margin-top: 25px;
+  }
+
+  .about-us .btn-list {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* COFFEE PRODUCTS */
+  .coffee-products {
+    padding: 40px 0;
+  }
+
+  .coffee-products h3 {
+    font-size: 28px;
+  }
+  .coffee-products .custom-btn {
+    position: static;
+    margin-top: 20px;
+    display: inline-flex;  /* ← add this */
+  }
+
+  .coffee-moments {
+    padding: 40px 0;
+  }
+
+  .coffee-moments h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .coffee-moments .sub-title {
+    font-size: 34px;
+  }
+
+  .coffee-moments .img-box {
+    margin-bottom: 25px;
+  }
+
+  /* WHAT WE OFFER */
+  .what-we-offer .bg {
+    padding: 20px;
+  }
+
+  .what-we-offer h3 {
+    font-size: 28px;
+  }
+
+  .what-we-offer .list-items li {
+    width: 50%;
+  }
+
+  .what-we-offer .content-left {
+    margin-bottom: 20px;
+  }
+
+  /* RELATED PRODUCTS */
+  .coffee-related-products {
+    padding: 40px 0 20px;
+  }
+
+  .coffee-related-products h3 {
+    font-size: 28px;
+  }
+
+  .coffee-related-products .btn-list {
+    position: static;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .coffee-related-products .product-list li {
+    width: 50%;
+  }
+
+  /* REVIEWS */
+  .clients-review {
+    padding: 40px 0;
+  }
+
+  .clients-review h3 {
+    font-size: 28px;
+  }
+
+  .clients-review .custom-btn {
+    position: static;
+    margin-top: 25px;
+  }
+
+  /* LATEST BLOG */
+  .latest-blog {
+    padding: 40px 0;
+  }
+
+  .latest-blog h4 {
+    font-size: 28px;
+  }
+
+  .latest-blog .custom-btn {
+    position: static;
+    margin-top: 25px;
+  }
+
+  /* CUSTOM PRODUCT */
+  .custom-product {
+    padding: 40px 0;
+  }
+
+  .custom-product .content-box {
+    max-width: 40%;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  /* HOME BANNER */
+  .home-banner {
+    padding: 70px 0;
+  }
+
+  .home-banner h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .home-banner p {
+    font-size: 15px;
+  }
+
+  /* BRAND PARTNER */
+  .brand-partner .partner-list li {
+    width: 33.333%;
+    padding: 8px 10px;
+  }
+
+  .brand-partner .partner-list li img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* ABOUT US */
+  .about-us .col-md-6 {
+    width: 100%;
+  }
+
+  .about-us h2 {
+    font-size: 24px;
+  }
+
+  .about-us .sub-title {
+    font-size: 30px;
+  }
+
+  /* COFFEE PRODUCTS */
+  .coffee-products h3 {
+    font-size: 24px;
+  }
+
+  /* COFFEE MOMENTS */
+  .coffee-moments .col-md-6 {
+    width: 100%;
+  }
+
+  .coffee-moments h3 {
+    font-size: 24px;
+  }
+
+  .coffee-moments .sub-title {
+    font-size: 30px;
+  }
+
+  /* WHAT WE OFFER */
+  .what-we-offer .col-md-5,
+  .what-we-offer .col-md-7 {
+    width: 100%;
+  }
+
+  .what-we-offer h3 {
+    font-size: 24px;
+  }
+
+  .what-we-offer .list-items li {
+    width: 100%;
+  }
+
+  .what-we-offer .content-box .img-box {
+    width: 35%;
+  }
+
+  .what-we-offer .content-box .content {
+    width: 65%;
+  }
+
+  /* RELATED PRODUCTS */
+  .coffee-related-products h3 {
+    font-size: 24px;
+  }
+
+  .coffee-related-products .product-list li {
+    width: 50%;
+  }
+
+  .coffee-related-products .btn-list {
+    gap: 10px;
+  }
+
+  /* REVIEWS */
+  .clients-review h3 {
+    font-size: 24px;
+  }
+
+  /* LATEST BLOG */
+  .latest-blog h4 {
+    font-size: 24px;
+  }
+
+  .latest-blog .slide-content .title {
+    font-size: 17px;
+  }
+
+  /* CUSTOM PRODUCT */
+  .custom-product .content-box {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 575px) {
+
+  /* HOME BANNER */
+  .home-banner {
+    padding: 50px 0;
+    text-align: left;
+  }
+
+  .home-banner h1 {
+    font-size: 22px;
+  }
+
+  .home-banner p {
+    font-size: 14px;
+  }
+
+  /* BRAND PARTNER */
+  .brand-partner .partner-list li {
+    width: 50%;
+    padding: 8px 10px;
+  }
+
+  /* ABOUT US */
+  .about-us h2 {
+    font-size: 20px;
+  }
+
+  .about-us .sub-title {
+    font-size: 26px;
+  }
+
+  .about-us .btn-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-us .btn-list .custom-btn {
+    width: fit-content;
+  }
+
+  /* COFFEE PRODUCTS */
+  .coffee-products h3 {
+    font-size: 22px;
+  }
+
+  .coffee-products .content-box .title {
+    font-size: 16px;
+  }
+
+  .coffee-products .content-box .price {
+    font-size: 15px;
+  }
+
+  /* COFFEE MOMENTS */
+  .coffee-moments h3 {
+    font-size: 20px;
+  }
+
+  .coffee-moments .sub-title {
+    font-size: 26px;
+  }
+
+  /* WHAT WE OFFER */
+  .what-we-offer h3 {
+    font-size: 22px;
+  }
+
+  .what-we-offer .content-box {
+    flex-direction: column;
+  }
+
+  .what-we-offer .content-box .img-box,
+  .what-we-offer .content-box .content {
+    width: 100%;
+  }
+
+  .what-we-offer .content-box .content .title {
+    font-size: 15px;
+  }
+
+  /* RELATED PRODUCTS */
+  .coffee-related-products h3 {
+    font-size: 22px;
+  }
+
+  .coffee-related-products .product-list li {
+    width: 100%;
+  }
+
+  .coffee-related-products .content-box .title {
+    font-size: 17px;
+  }
+
+  .coffee-related-products .content-box .price {
+    font-size: 15px;
+  }
+
+  /* REVIEWS */
+  .clients-review h3 {
+    font-size: 22px;
+  }
+
+  .clients-review .slide-content .auther-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .clients-review .slide-content .auther-info .auther-box {
+    width: 100%;
+  }
+
+  .clients-review .slide-content .auther-info .rating {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* LATEST BLOG */
+  .latest-blog h4 {
+    font-size: 22px;
+  }
+
+  .latest-blog .slide-content .title {
+    font-size: 15px;
+  }
+
+  .latest-blog .slide-content .list-items {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  /* CUSTOM PRODUCT */
+  .custom-product .content-box {
+    max-width: 100%;
+  }
+
+  /* FREE SHIPPING */
+  .free-shipping {
+    font-size: 15px;
+  }
+}
