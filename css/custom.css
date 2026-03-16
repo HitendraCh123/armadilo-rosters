@@ -1,0 +1,1466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus,
+a:focus,
+button:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+a,
+img,
+button,
+input[type="submit"],
+div {
+    transition: all 0.5s ease;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.fa.fa-twitter {
+    font-family: sans-serif;
+}
+
+.fa.fa-twitter::before {
+    content: "𝕏";
+    font-size: 1.2em;
+}
+
+body {
+    font-family: "Jost", sans-serif !important;
+    font-weight: 400 !important;
+    background: #fff !important;
+    color: #1E1E1E !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+}
+
+
+header.site-header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #fff;
+}
+
+header.site-header .header-top {
+    padding: 15px 0;
+    text-align: center;
+    background: #482615;
+    color: #fff;
+}
+
+header.site-header .header-top a {
+    color: #fff;
+}
+
+header.site-header .header-top a:hover {
+    text-decoration: none;
+}
+
+header.site-header .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+header.site-header .main-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+header.site-header .main-menu li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #181818;
+    display: flex;
+    font-weight: 500;
+}
+
+header.site-header .main-menu li a:hover {
+    color: #482615;
+}
+
+header.site-header .site-brand {
+    text-align: center;
+}
+
+header.site-header .site-brand img {
+    max-height: 75px;
+}
+
+header.site-header .header-bottom {
+    position: relative;
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+}
+
+header.site-header .header-bottom .row {
+    align-items: center;
+}
+
+header.site-header .account-list {
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 30px;
+    list-style-type: none;
+    gap: 15px;
+    width: 60%;
+}
+
+header.site-header .account-list li {
+    margin: 0;
+    padding: 0;
+}
+
+header.site-header .account-list li a {
+    text-decoration: none;
+    color: #181818;
+    font-weight: 500;
+}
+
+header.site-header .account-list li a:hover {
+    color: #482615;
+}
+
+header.site-header .header-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+}
+
+header.site-header .search-box {
+    width: 40%;
+}
+
+header.site-header .search-box input[type="search"] {
+    padding: 10px 10px 10px 45px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #939393;
+}
+
+header.site-header .search-box form {
+    position: relative;
+}
+
+header.site-header .search-box input[type="submit"] {
+    width: 30px;
+    height: 30px;
+    background: url("../images/search-icon.png") no-repeat center center;
+    border-radius: 100%;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    text-indent: -9999px;
+    border: none
+}
+
+
+
+.home-banner {
+    margin: 0;
+    padding: 160px 0;
+    text-align: center;
+    background: url("../images/home-banner.jpg") no-repeat center center;
+    background-size: cover !important;
+}
+
+.home-banner h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.home-banner .custom-btn {
+    margin: 30px 0 0 0;
+    display: inline-flex;
+}
+
+.home-banner .custom-btn a {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    background: #482615;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.home-banner .custom-btn a span {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #482615;
+}
+
+.home-banner .custom-btn a span i {
+    transform: rotate(45deg);
+}
+
+.home-banner .custom-btn a:hover {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #482615;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.home-banner .custom-btn a:hover span {
+    width: 30px;
+    height: 30px;
+    background: #482615;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+}
+
+.home-banner.inner-banner {
+    background: url("../images/contact-bg.png") no-repeat center center;
+    background-size: cover !important;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+.home-banner.inner-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    z-index: -1;
+}
+
+.home-banner.inner-banner h1 {
+    color: #fff;
+}
+
+
+.brand-partner {
+    margin: 0;
+    padding: 0px 0;
+    position: relative;
+    background: #482615;
+}
+
+.brand-partner .partner-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.brand-partner .partner-list li {
+    margin: 0;
+    padding: 0 15px;
+    width: 16.666%;
+}
+
+
+.what-we-offer {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.what-we-offer h3 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.what-we-offer .bg {
+    background: url("../images/what-we-offer.jpg") no-repeat center center;
+    background-size: cover !important;
+    padding: 30px;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.what-we-offer .list-items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.what-we-offer .list-items li {
+    width: 50%;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+}
+
+.what-we-offer .list-items li a {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+.what-we-offer .content-box {
+    width: 100%;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.what-we-offer .content-box .img-box,
+.what-we-offer .content-box .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.what-we-offer .content-box .img-box {
+    width: 40%;
+}
+
+.what-we-offer .content-box .img-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.what-we-offer .content-box .content {
+    width: 60%;
+    padding: 15px;
+}
+
+.what-we-offer .content-box .content p:last-child {
+    margin-bottom: 0;
+}
+
+.what-we-offer .content-box .content .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.what-we-offer .content-box .content p {
+    color: #fff;
+}
+
+.what-we-offer .content-left,
+.what-we-offer .content-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.what-we-offer .google-review {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0 0 0;
+}
+
+.what-we-offer .google-review p {
+    margin-bottom: 0;
+}
+
+.what-we-offer .google-review p a {
+    color: #fff;
+}
+
+
+
+.latest-blog {
+    margin: 0;
+    padding: 60px 0;
+    background: #E0C5B8;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+.latest-blog h4 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.latest-blog .slide-content img {
+    border-radius: 15px;
+}
+
+.latest-blog .slide-content .title {
+    color: #000;
+    font-size: 21px;
+    padding: 10px 0;
+}
+
+.latest-blog .slide-content .list-items {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.latest-blog .slide-content .list-items li {
+    border: 1px solid #D4A38B;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #EBD6CC;
+}
+
+.latest-blog .owl-dots {
+    margin: 30px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.latest-blog .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #F9E7DD !important;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+.latest-blog .owl-dots .owl-dot.active {
+    background: #482615 !important;
+}
+
+.latest-blog .custom-btn {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.latest-blog .custom-btn a {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.latest-blog .custom-btn a span {
+    width: 30px;
+    height: 30px;
+    background: #482615;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+}
+
+.latest-blog .custom-btn a span i {
+    transform: rotate(45deg);
+}
+
+.latest-blog .custom-btn a:hover {
+    border: 1px solid #482615;
+    color: #fff;
+    background: #482615;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.latest-blog .custom-btn a:hover span {
+    background: #fff;
+    color: #482615;
+}
+
+
+
+.clients-review {
+    margin: 0;
+    padding: 60px 0;
+    background: #FFF;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+.clients-review h3 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.clients-review .owl-dots {
+    margin: 30px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.clients-review .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #F9E7DD !important;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+.clients-review .owl-dots .owl-dot.active {
+    background: #482615 !important;
+}
+
+.clients-review .custom-btn {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.clients-review .custom-btn a {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #482615;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.clients-review .custom-btn a span {
+    width: 30px;
+    height: 30px;
+    background: #482615;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+}
+
+.clients-review .custom-btn a span i {
+    transform: rotate(45deg);
+}
+
+.clients-review .custom-btn a:hover {
+    border: 1px solid #482615;
+    color: #fff;
+    background: #482615;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.clients-review .custom-btn a:hover span {
+    background: #fff;
+    color: #482615;
+}
+
+
+.clients-review .slide-content {
+    border: 1px solid #CDCDCD;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 15px;
+}
+
+.clients-review .slide-content .auther-info {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.clients-review .slide-content .auther-info .auther-img {
+    width: 60px;
+    min-width: 60px;
+    margin: 0 15px 0 0;
+}
+
+.clients-review .slide-content .auther-info .auther-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.clients-review .slide-content .more-btn a {
+    color: #444;
+}
+
+.clients-review .slide-content .auther-info .auther-box {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients-review .slide-content .auther-info .rating {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clients-review .slide-content .auther-info .rating img {
+    width: auto
+}
+
+.clients-review .slide-content .auther-info .auther-desi {
+    color: #444;
+}
+
+
+.coffee-related-products {
+    margin: 0;
+    padding: 60px 0 30px 0;
+    background: #FAFAFA;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+.coffee-related-products h3 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.coffee-related-products .btn-list {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    display: flex;
+    gap: 15px
+}
+
+.coffee-related-products .btn-list .custom-btn {
+    margin: 0;
+}
+
+.coffee-related-products .btn-list .custom-btn a {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.coffee-related-products .btn-list .custom-btn a span {
+    width: 30px;
+    height: 30px;
+    background: #482615;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+}
+
+.coffee-related-products .btn-list .custom-btn a span i {
+    transform: rotate(45deg);
+}
+
+.coffee-related-products .btn-list .custom-btn a:hover {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    background: #482615;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.coffee-related-products .btn-list .custom-btn a:hover span {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #482615;
+}
+
+.coffee-related-products .product-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.coffee-related-products .product-list li {
+    width: 33.333%;
+    margin: 0 0 30px 0;
+    padding: 0 15px;
+    display: flex;
+}
+
+.coffee-related-products .img-box {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.coffee-related-products .content-box {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.coffee-related-products .content-box a {
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.coffee-related-products .content-box .content {
+    padding: 10px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+.coffee-related-products .content-box .title {
+    font-size: 21px;
+    font-weight: 600;
+    color: #482615;
+}
+
+.coffee-related-products .content-box .price {
+    color: #000;
+    font-size: 18px;
+}
+
+.coffee-related-products .content-box .add-cart {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40;
+}
+
+.coffee-related-products .content-box .add-cart a {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-decoration: none;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #fff;
+    color: #000;
+}
+
+
+
+.coffee-moments {
+    margin: 0;
+    padding: 60px 0;
+    background: #FFF;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+.coffee-moments .sub-title {
+    font-family: "Parisienne", cursive;
+    color: #CCAD71;
+    font-size: 42px;
+}
+
+.coffee-moments h3 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.coffee-moments .custom-btn {
+    margin: 0;
+}
+
+.coffee-moments .custom-btn a {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: inline-flex;
+    gap: 10px;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.coffee-moments .custom-btn a span {
+    width: 30px;
+    height: 30px;
+    background: #482615;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+}
+
+.coffee-moments .custom-btn a span i {
+    transform: rotate(45deg);
+}
+
+.coffee-moments .custom-btn a:hover {
+    border: 1px solid #482615;
+    color: #fff;
+    background: #482615;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.coffee-moments .custom-btn a:hover span {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #482615;
+}
+
+.coffee-moments .img-box img {
+    border-radius: 15px;
+}
+
+.coffee-moments .img-box,
+.coffee-moments .content-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-us {
+    margin: 0;
+    padding: 60px 0;
+    background: #FFF;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+.about-us .sub-title {
+    font-family: "Parisienne", cursive;
+    color: #CCAD71;
+    font-size: 42px;
+}
+
+.about-us h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.about-us .btn-list {
+    display: flex;
+    gap: 15px
+}
+
+.about-us .btn-list .custom-btn {
+    margin: 0;
+}
+
+.about-us .btn-list .custom-btn a {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.about-us .btn-list .custom-btn a span {
+    width: 30px;
+    height: 30px;
+    background: #482615;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+}
+
+.about-us .btn-list .custom-btn a span i {
+    transform: rotate(45deg);
+}
+
+.about-us .img-box img {
+    border-radius: 15px;
+}
+
+.about-us .img-box,
+.about-us .content-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.custom-product {
+    margin: 0;
+    padding: 60px 0;
+    background: #FFF url("../images/custom-product-bg.jpg") no-repeat right bottom;
+    background-size: cover !important;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+.custom-product h3 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.custom-product .product-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.custom-product .product-list li {
+    width: 33.333%;
+    margin: 0 0 30px 0;
+    padding: 0 15px;
+    display: flex;
+}
+
+.custom-product .img-box {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.custom-product .content-box {
+    width: 100%;
+    max-width: 25%;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.custom-product .content-box a {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.custom-product .content-box .title {
+    font-size: 21px;
+    font-weight: 600;
+    color: #482615;
+}
+
+.custom-product .content-box .price {
+    color: #000;
+    font-size: 18px;
+}
+
+.custom-product .owl-nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.custom-product .owl-nav button {
+    position: absolute;
+}
+
+.custom-product .owl-nav button.owl-next {
+    right: 15px;
+}
+
+.custom-product .owl-nav button.owl-prev {
+    left: 15px;
+}
+
+.custom-product .add-cart {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40;
+}
+
+.custom-product .add-cart a {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-decoration: none;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #482615;
+    color: #fff;
+}
+
+
+.coffee-products {
+    margin: 0;
+    padding: 60px 0;
+    background: #FAFAFA;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+.coffee-products h3 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.coffee-products .custom-btn {
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.coffee-products .custom-btn a {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #482615;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.coffee-products .custom-btn a span {
+    width: 30px;
+    height: 30px;
+    background: #482615;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+}
+
+.coffee-products .custom-btn a span i {
+    transform: rotate(45deg);
+}
+
+.coffee-products .custom-btn a:hover {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    background: #482615;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.coffee-products .custom-btn a:hover span {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #482615;
+}
+
+
+.coffee-products .img-box {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.coffee-products .content-box {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.coffee-products .content-box a {
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.coffee-products .content-box .content {
+    padding: 10px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+.coffee-products .content-box .title {
+    font-size: 21px;
+    font-weight: 600;
+    color: #482615;
+}
+
+.coffee-products .content-box .price {
+    color: #000;
+    font-size: 18px;
+}
+
+.coffee-products .content-box .add-cart {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40;
+}
+
+.coffee-products .content-box .add-cart a {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-decoration: none;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #fff;
+    color: #000;
+}
+
+.coffee-products .owl-dots {
+    margin: 30px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.coffee-products .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #F9E7DD !important;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+.coffee-products .owl-dots .owl-dot.active {
+    background: #482615 !important;
+}
+
+
+
+.free-shipping {
+    background: #fff;
+    position: relative;
+    padding: 15px 0;
+    margin: 0;
+    color: #482615;
+    font-size: 18px;
+}
+
+/*------------ Footer -----------*/
+footer.site-footer {
+    margin: 0;
+    padding: 60px 0 0 0;
+    position: relative;
+    width: 100%;
+    background: #FFF9F0;
+    color: #181818;
+    border-top: 1px solid #482615;
+}
+
+footer.site-footer h5 {
+    color: #482615;
+    font-size: 28px;
+    margin: 0 0 15px 0;
+}
+
+footer.site-footer .nav-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+}
+
+footer.site-footer .nav-list li {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+footer.site-footer .nav-list li a {
+    color: #181818;
+    text-decoration: none;
+}
+
+footer.site-footer .nav-list li a:hover {
+    color: #482615;
+}
+
+footer.site-footer .privacy {
+    text-align: right;
+}
+
+footer.site-footer .privacy a,
+footer.site-footer .copy-right a {
+    color: rgba(24, 24, 24, 0.8);
+    text-decoration: none;
+}
+
+footer.site-footer .privacy a:hover,
+footer.site-footer .copy-right a:hover {
+    color: #181818;
+}
+
+footer.site-footer .footer-bottom {
+    padding: 15px 0;
+    background: #F4E9D8;
+    color: rgba(24, 24, 24, 0.8);
+    margin: 0
+}
+
+footer.site-footer .footer-top .row {
+    align-items: center;
+}
+
+footer.site-footer .footer-middle {
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+footer.site-footer .social-list {
+    margin: 15px 0 0 0;
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    padding: 0;
+}
+
+footer.site-footer .contact-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+footer.site-footer .contact-list li {
+    display: flex;
+    margin: 0 0 10px 0;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+
+footer.site-footer .contact-list li span {
+    color: #482615;
+    font-size: 21px;
+}
+
+footer.site-footer .contact-list li a {
+    color: #181818;
+    text-decoration: none;
+}
+
+footer.site-footer .contact-list li a:hover {
+    color: #482615;
+}
+
+footer.site-footer .news-leeter form {
+    position: relative;
+}
+
+footer.site-footer .news-leeter input[type="email"] {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    color: #444;
+}
+
+footer.site-footer .news-leeter input[type="submit"] {
+    background: url("../images/news-letter-arrow.png") no-repeat center center;
+    border: none;
+    text-indent: -9999px;
+    width: 29px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+footer.site-footer .site-brand img {
+    max-height: 100px
+}
+
+
+.contact-us {
+    margin: 0;
+    padding: 60px 0;
+    background: #FFF;
+    position: relative;
+    width: 100%;
+    color: #000;
+}
+
+.contact-us .sub-title {
+    font-family: "Parisienne", cursive;
+    color: #CCAD71;
+    font-size: 42px;
+}
+
+.contact-us h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+    color: #482615;
+}
+
+.contact-us .custom-btn {
+    margin: 40px 0;
+}
+
+.contact-us .custom-btn {
+    border: 1px solid #482615;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    gap: 10px;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.contact-us .custom-btn span {
+    width: 30px;
+    height: 30px;
+    background: #482615;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    color: #fff;
+}
+
+.contact-us .custom-btn span i {
+    transform: rotate(45deg);
+}
+
+.contact-us form {
+    margin-top: 60px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    background: #FFF9F1;
+    border: 1px solid #482615;
+    font-size: 12px;
+    padding: 15px 25px;
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    background: #FFF9F1;
+    border: 1px solid #CCAD71;
+}
+
+.contact-us .contact-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.contact-us .contact-list li {
+    display: flex;
+    margin: 0 0 10px 0;
+    width: 100%;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.contact-us .contact-list li span {
+    color: #482615;
+    font-size: 21px;
+}
+
+.contact-us .contact-list li a {
+    color: #181818;
+    text-decoration: none;
+}
+
+.contact-us .contact-list li a:hover {
+    color: #482615;
+}
